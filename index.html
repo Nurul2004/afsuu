@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday, Afsuu </title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       BACKGROUND EFFECTS
+  ========================== -->
+
+  <div id="petals"></div>
+
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
+
+
+  <!-- =========================
+       MUSIC
+  ========================== -->
+
+  <audio id="birthdayMusic" loop>
+    <source src="birthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicBtn" class="music-btn" aria-label="Toggle music">
+    🎵
+  </button>
+
+
+  <!-- =========================
+       OPENING SCREEN
+  ========================== -->
+
+  <section id="openingScreen" class="opening-screen">
+
+    <div class="envelope-wrapper">
+
+      <div id="envelope" class="envelope">
+
+        <div class="envelope-back"></div>
+
+        <div class="envelope-paper">
+          <div class="heart-symbol">☺️</div>
+
+          <p>For You Afsuu</p>
+        </div>
+
+        <div class="envelope-flap"></div>
+
+      </div>
+
+      <button id="openEnvelopeBtn" class="main-btn">
+        Open My Letter 💌
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       MAIN WEBSITE
+  ========================== -->
+
+  <main id="mainContent" class="main-content hidden">
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero section">
+
+      <div class="hero-content">
+
+        <p class="small-title">
+          To the most beautiful person in my life
+        </p>
+
+        <h1>
+          Happy Birthday
+          <span style="font-family: 'Courier New', Courier, monospace;">Afsuu</span>
+        </h1>
+
+        <p class="hero-description">
+        তোমার জীবনের প্রতিটি নতুন বছর যেন নিয়ে আসে আরও বেশি হাসি, শান্তি আর ভালোবাসা। শুভ জন্মদিন।” 🎂✨
+        </p>
+
+        <button id="celebrateBtn" class="main-btn">
+          Let's Celebrate 🎉
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="intro section">
+
+      <div class="section-container">
+
+        <p class="section-label">
+          A Little Message
+        </p>
+
+        <h2>
+          You Mean More Than Words Can Say
+        </h2>
+
+        <p class="message-text">
+        আজকের দিনটা তোমার, আর তোমার মতোই বিশেষ। হাসতে থেকো, স্বপ্ন দেখতে থেকো, আর সবসময় এমনই সুন্দর থেকো। Happy Birthday!
+        </p>
+
+        <p class="message-text">
+          Every smile, every conversation and every little
+          moment with you has a special place in my heart.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CAKE
+    ========================== -->
+
+    <section class="cake-section section">
+
+      <div class="section-container">
+
+        <p class="section-label">
+        Only For You Afsuu
+        </p>
+
+        <h2>
+          Your Birthday Cake 🎂
+        </h2>
+
+        <div class="cake-wrapper">
+
+          <div class="cake">
+
+            <div class="candle candle-1">
+              <div class="flame"></div>
+            </div>
+
+            <div class="candle candle-2">
+              <div class="flame"></div>
+            </div>
+
+            <div class="candle candle-3">
+              <div class="flame"></div>
+            </div>
+
+            <div class="cake-top"></div>
+
+            <div class="cake-middle"></div>
+
+            <div class="cake-bottom"></div>
+
+          </div>
+
+        </div>
+
+        <button id="blowCandlesBtn" class="main-btn">
+          Blow the Candles 🕯️
+        </button>
+
+        <p id="wishMessage" class="wish-message hidden">
+          তোমার হাসির মতো সুন্দর হোক তোমার প্রতিটি আগামী দিন।
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GIFT
+    ========================== -->
+
+    <section class="gift-section section">
+
+      <div class="section-container">
+
+        <p class="section-label">
+          A Little Surprise
+        </p>
+
+        <h2>
+          I Have Something For You 
+        </h2>
+
+        <div id="giftBox" class="gift-box">
+
+          <div class="gift-lid"></div>
+
+          <div class="gift-body">
+
+            <div class="gift-ribbon vertical"></div>
+
+          </div>
+
+          <div class="gift-ribbon horizontal"></div>
+
+        </div>
+
+        <button id="openGiftBtn" class="main-btn">
+          Open Your Gift 
+        </button>
+
+        <div id="giftMessage" class="gift-message hidden">
+
+          <h3>
+            Happy Birthday Afsuu
+          </h3>
+
+          <p>
+            আজ তোমার জন্মদিন… হয়তো আমি তোমার জীবনের কোনো গুরুত্বপূর্ণ মানুষ নই, তবুও দূর থেকে চাই—তোমার জীবনটা সুন্দর থাকুক। যে মানুষটা একদিন হঠাৎ করে অজানা থেকে এসে তোমার জীবনে কিছু অশান্তি রেখে গেছে, তার পক্ষ থেকে আজ শুধু একটাই কথা—তুমি সুখে থেকো। শুভ জন্মদিন
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <section class="gallery-section section">
+
+      <div class="section-container">
+
+        <p class="section-label">
+          Beautiful Memories
+        </p>
+
+        <h2>
+          Moments I Treasure 📸
+        </h2>
+
+        <div class="gallery">
+
+          <div class="gallery-item">
+            <img src="image5.jpeg" alt="Beautiful memory">
+          </div>
+
+          <div class="gallery-item">
+            <img src="image1.jpeg" alt="Beautiful memory">
+          </div>
+
+          <div class="gallery-item">
+            <img src="image6.jpeg" alt="Beautiful memory">
+          </div>
+
+          <div class="gallery-item">
+            <img src="image3.jpeg" alt="Birthday memory">
+          </div>
+
+          <div class="gallery-item">
+            <img src="image4.jpeg" alt="Gift memory">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         VIDEO
+    ========================== -->
+
+    <section class="video-section section">
+
+      <div class="section-container">
+
+        <p class="section-label">
+          A Special Moment
+        </p>
+
+        <h2>
+          A Little Video For You 🎥
+        </h2>
+
+        <div class="video-wrapper">
+
+          <video
+            id="birthdayVideo"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOVE LETTER
+    ========================== -->
+
+    <section class="letter-section section">
+
+      <div class="section-container">
+
+        <p class="section-label">
+          From My Heart
+        </p>
+
+        <h2>
+          My Letter To You 💌
+        </h2>
+
+        <div class="letter-card">
+
+          <p>
+            Dear Afsuu,
+          </p>
+
+          <p>
+            জানি তুমি আমার উপর অনেক বিরক্ত, রাগ পোষন করো। কি থেকে কি হয়ে গেলো আমি কিছুই বুঝি নি। আমি ভেবেছি যত কিছু হোক তুমি আমাকে ছেড়ে যাবে না আফসু। পানি না পেলে গাছ ও একদিন মারা যায় 🙂। তুমি আমাকে ছেড়ে চলে গেলো, ঐসময়টাতে আমি বুঝেছি ঠিক কতটা ভালোবাসি আমি তোমাকে আফসু। জানো অনেক কান্না করেছিলেন। একটু সুযোগ খুঁজতাম তোমার সাথে একটু কথা বলার। ভাগ্য তো মেনে নিতেই হবে 😊। যেখানে থাকো ভালো থেকো আফসু। মন খারাপ করো না, রাতে বেশি জেগো না, খাওয়া - দাওয়া কইরো ঠিক মতো। আর একটা কথা তোমাকে হাসিতে অনেক সুন্দর লাগে আর কপালে কালো ছোট্ট একটা টিপ। এগুলো কোনোদিন হারায়ওনা প্লিজ। নিজের শরীরের দিকে খেয়াল রেখো। 
+          </p>
+
+          <p>
+         
+          </p>
+
+          <p>
+            Keep smiling. Keep shining.
+            And never forget you are queen.
+          </p>
+
+          <p class="signature">
+           ভালো থাকো আফসু  ☺️
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL SECTION
+    ========================== -->
+
+    <section class="final-section section">
+
+      <div class="final-content">
+
+        <div class="final-heart">
+          
+        </div>
+
+        <h2>
+          Happy Birthday, Afsuu
+        </h2>
+
+        <p>
+          May your smile always be as beautiful
+          as always.
+        </p>
+
+        <button id="finalCelebrateBtn" class="main-btn">
+          Celebrate Again 🎉
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       IMAGE MODAL
+  ========================== -->
+
+  <div id="imageModal" class="image-modal hidden">
+
+    <button id="closeModal" class="close-modal">
+      ×
+    </button>
+
+    <img id="modalImage" src="" alt="Full size image">
+
+  </div>
+
+
+  <!-- =========================
+       CONFETTI CONTAINER
+  ========================== -->
+
+  <div id="confetti"></div>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
